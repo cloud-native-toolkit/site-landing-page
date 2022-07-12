@@ -1,0 +1,111 @@
+site_name: Cloud Native Toolkit
+site_description: >-
+  The Cloud-Native Toolkit is an open-source collection of assets that enable application development and support teams to deliver business value quickly using Red Hat OpenShift or Kubernetes
+site_url: https://cloudnativetoolkit.dev
+site_author: Cloud-Native Toolkit development team
+repo_name: ""
+repo_url: https://github.com/cloud-native-toolkit/developer-guide
+docs_dir: docs
+site_dir: public
+edit_uri: edit/main/docs
+theme:
+    name: material
+    logo: images/cloudnativetoolkit.png
+    favicon: images/cloudnativetoolkit.png
+    palette:
+      scheme: default
+      primary: black
+    font:
+      text: IBM Plex Sans
+      code: IBM Plex Mono
+    language: en
+    custom_dir: overrides
+    features:
+#      - navigation.tabs
+      - navigation.instant
+      - navigation.tracking
+#      - navigation.tabs.sticky
+#      - navigation.top
+use_directory_urls: true
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+  - redirects:
+      redirect_maps:
+        'index.html': 'https://develop.cloudnativetoolkit.dev'
+        'install': 'https://develop.cloudnativetoolkit.dev/setup/setup-options.md'
+        'setup': 'https://develop.cloudnativetoolkit.dev/learning/dev-setup.md'
+        'learn': 'https://develop.cloudnativetoolkit.dev/learning/fast-start.md'
+        'learning': 'https://develop.cloudnativetoolkit.dev/learning/fast-start.md'
+        'workshop': 'https://develop.cloudnativetoolkit.dev/resources/workshop/workshop.md'
+        'workshop/setup': 'https://develop.cloudnativetoolkit.dev/resources/workshop/setup.md'
+        'workshop/terminal': 'https://develop.cloudnativetoolkit.dev/resources/workshop/terminal.md'
+        'workshop/ci': 'https://develop.cloudnativetoolkit.dev/resources/workshop/ci.md'
+        'workshop/cd': 'https://develop.cloudnativetoolkit.dev/workshop/cd.md'
+        'workshop/inventory': 'https://develop.cloudnativetoolkit.dev/resources/workshop/cd.md'
+        'workshop/appmod': 'https://develop.cloudnativetoolkit.dev/resources/workshop/appmod.md'
+        'workshop/ai': 'https://develop.cloudnativetoolkit.dev/resources/workshop/ai.md'
+        'getting-started': 'https://develop.cloudnativetoolkit.dev/learning/fast-start.md'
+        'getting-started/prereqs': 'https://develop.cloudnativetoolkit.dev/learning/dev-setup.md'
+        'getting-started/cli': 'https://develop.cloudnativetoolkit.dev/reference/cli.md'
+        'getting-started/icc': 'https://develop.cloudnativetoolkit.dev/resources/ibm-cloud/icc.md'
+        'getting-started/dev-env-setup': 'https://develop.cloudnativetoolkit.dev/learning/dev-setup.md'
+        'getting-started/dev-ops': 'https://develop.cloudnativetoolkit.dev/adopting/best-practices/devops.md'
+        'whats-new': 'https://develop.cloudnativetoolkit.dev/overview/whats-new.md'
+        'overview': 'https://develop.cloudnativetoolkit.dev/overview/overview.md'
+        'getting-started-day-0': 'https://develop.cloudnativetoolkit.dev/resources/ibm-cloud/ibm-cloud-roles.md'
+        'getting-started-day-0/prepare-account': 'https://develop.cloudnativetoolkit.dev/adopting/setup/ibmcloud-setup.md'
+        'getting-started-day-0/provision-cluster/ibm-cloud-vpc': 'https://develop.cloudnativetoolkit.dev/adopting/setup/ibmcloud-tile-cluster.md'
+        'getting-started-day-0/install-toolkit/quick-install': 'https://develop.cloudnativetoolkit.dev/setup/fast-start.md'
+        'getting-started-day-0/post-installation': 'https://develop.cloudnativetoolkit.dev/adopting/admin/cluster-config.md'
+        'getting-started-day-1': 'https://develop.cloudnativetoolkit.dev/learning/in-depth.md'
+        'getting-started-day-1/deploy-app': 'https://develop.cloudnativetoolkit.dev/learning/fast-ci.md'
+        'getting-started-day-1/dashboard': 'https://develop.cloudnativetoolkit.dev/reference/dashboard.md'
+        'getting-started-day-1/build-operator': 'https://develop.cloudnativetoolkit.dev/adopting/use-cases/operator/operator.md'
+        'getting-started-day-2': 'https://develop.cloudnativetoolkit.dev/learning/devops.md'
+        'tools': 'https://develop.cloudnativetoolkit.dev/overview/overview.md'
+        'tools/tekton': 'https://develop.cloudnativetoolkit.dev/reference/tools/tekton.md'
+        'tools/jenkins': 'https://develop.cloudnativetoolkit.dev/reference/tools/jenkins.md'
+        'tools/ibm-cloud-container-registry': 'https://develop.cloudnativetoolkit.dev/reference/tools/ibm-cloud-container-registry.md'
+        'tools/artifactory': 'https://develop.cloudnativetoolkit.dev/tools/artifactory.md'
+        'tools/sonarqube': 'https://develop.cloudnativetoolkit.dev/tools/sonar-qube.md'
+        'tools/contract-testing-with-pact': 'https://develop.cloudnativetoolkit.dev/tools/pact.d'
+        'tools/logdna': 'https://develop.cloudnativetoolkit.dev/adopting/customize/config-dashboard/dashboard.md'
+        'tools/sysdig': 'https://develop.cloudnativetoolkit.dev/adopting/customize/config-dashboard/dashboard.md'
+        'tools/argocd': 'https://develop.cloudnativetoolkit.dev/learning/fast-cd.md'
+        'tools/secret-management-with-key-protect': 'https://develop.cloudnativetoolkit.dev/reference/tools/key-protect.md'
+        'admin/install-crw': 'https://develop.cloudnativetoolkit.dev/adopting/setup/install-crc.md'
+        'admin/config-dashboard': 'https://develop.cloudnativetoolkit.dev/adopting/customize/config-dashboard/dashboard.md'
+        'admin/artifactory-setup': 'https://develop.cloudnativetoolkit.dev/adopting/admin/artifactory-setup.md'
+        'admin/sysdig-setup': 'https://develop.cloudnativetoolkit.dev/adopting/admin/sysdig-setup.md'
+        'admin/terraform': 'https://develop.cloudnativetoolkit.dev/reference/iteration-zero/iteration-zero.md'
+        'admin/cluster-configuration': 'https://develop.cloudnativetoolkit.dev/adopting/admin/cluster-config.md'
+        'admin/destroying': 'https://develop.cloudnativetoolkit.dev/reference/iteration-zero/iteration-zero.md'
+        'starterkits': 'https://develop.cloudnativetoolkit.dev/reference/starter-kit/starter-kit.md'
+        'starterkits/gitrepos': 'https://develop.cloudnativetoolkit.dev/reference/starter-kit/starter-kits.md'
+        'learning/foundational': 'https://develop.cloudnativetoolkit.dev/https://cloudnative101.dev'
+        'learning/ace-pipeline': 'https://develop.cloudnativetoolkit.dev/adopting/use-cases/ace-pipeline/ace-pipeline.md'
+        'contributing': 'https://develop.cloudnativetoolkit.dev/contribute/contribute.md'
+
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.details
+extra_css:
+    - css/extra.css
+    - css/toolkit-code.css
+extra:
+  generator: false
+copyright: Copyright © 2021 Cloud-Native Toolkit
+google_analytics: ['UA-153689700-1', 'cloudnativetoolkit.dev']
+nav:
+  - Home: index.md
