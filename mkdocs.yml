@@ -27,6 +27,8 @@ theme:
 #      - navigation.tabs.sticky
 #      - navigation.top
 use_directory_urls: true
+watch:
+  - overrides
 plugins:
   - search:
       lang: en
