@@ -90,8 +90,10 @@ plugins:
         'learning/foundational': 'https://develop.cloudnativetoolkit.dev/https://cloudnative101.dev'
         'learning/ace-pipeline': 'https://develop.cloudnativetoolkit.dev/adopting/use-cases/ace-pipeline/ace-pipeline.md'
         'contributing': 'https://develop.cloudnativetoolkit.dev/contribute/contribute.md'
-        'reference/starter-kit': 'https://develop.cloudnativetoolkit.dev/reference/starter-kit/starter-kits.md'
-        'resources/workshop': 'https://develop.cloudnativetoolkit.dev/resources/workshop/workshop.md'
+        'reference/starter-kit': 'https://develop.cloudnativetoolkit.dev/reference/starter-kit/starter-kits/'
+        'reference/starter-kit/starter-kits': 'https://develop.cloudnativetoolkit.dev/reference/starter-kit/starter-kits/'
+        'resources/workshop': 'https://develop.cloudnativetoolkit.dev/resources/workshop/workshop/'
+        'resources/workshop/workshop': 'https://develop.cloudnativetoolkit.dev/resources/workshop/workshop/'
 
 
 markdown_extensions:
