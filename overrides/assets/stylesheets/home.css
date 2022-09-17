@@ -1,11 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
 
-@media (min-width: 500px) {
-  .col-sm-6 {
-    width: 50%;
-  }
-}
+
 html, body {
   height: 100%;
   min-height: 18em;
@@ -16,12 +12,24 @@ html, body {
 }
 
 .dev-side {
-  background-image: url("./images/datacenter.png");
+  background-image: url("./images/code3.png");
 }
 
+.dimmed {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom : 1em;
+  background: rgba(0, 0, 0, 0.6);
+}
 
 .operate-side {
-  background-image: url("./images/datacenter.png");
+  background-image: url("./images/dc2.jpeg");
 }
 
 .split-pane {
@@ -33,7 +41,6 @@ html, body {
   min-height: 9em;
   font-size: 2em;
   color: white;
-  font-family: 'Open Sans', sans-serif;
   font-weight:300;
 ;
 }
@@ -83,6 +90,7 @@ html, body {
   transition: all 0.2s ease-out;
   text-decoration: none;
   color: white;
+  background-color: #3333ff;
   display: inline-block;
   cursor: pointer;
 }
@@ -90,80 +98,21 @@ html, body {
   text-decoration: none;
   background-color: white;
   border-color: white;
+  color: black;
   cursor: pointer;
 }
-.uiux-side.split-pane button:hover, .split-pane a.button:hover {
-  color: violet;
-}
-.frontend-side.split-pane button:hover, .split-pane a.button:hover {
-  color: blue;
-}
 
-#split-pane-or {
-  font-size: 2em;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-@media (max-width: 925px) {
-  #split-pane-or {
-    top:15%;
-  }
-}
-#split-pane-or > div img {
-  height: 2.5em;
-}
-@media (max-width: 500px) {
-  #split-pane-or {
-    position: absolute;
-    top: 50px;
-  }
-  #split-pane-or > div img {
-    height:2em;
-  }
-}
-@media(min-width: 500px) {
-  #split-pane-or {
-    font-size: 3em;
-  }
-}
+
 .big {
   font-size: 2em;
 }
 
-#slogan {
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-  text-align: center;
-  vertical-align: baseline;
-  top: 0.5em;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4em;
-}
-@media(min-width: 500px) {
-  #slogan {
-    top: 5%;
-    font-size: 1.8em;
-  }
-}
-#slogan img {
-  height: 0.7em;
-}
 .bold {
   text-transform:uppercase;
 }
 .big {
   font-weight:800;
 }
-
 
 .row {
   display: flex;
@@ -205,6 +154,8 @@ html, body {
 /* center colum white */
 .md-content {
   background-color: #000;
+  height: 100%;
+  padding-bottom: 1em;
 }
 
 :root >* {
