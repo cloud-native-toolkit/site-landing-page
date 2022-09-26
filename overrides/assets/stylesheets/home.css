@@ -38,7 +38,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 50%;
+  width: 50%;
   min-height: 9em;
   font-size: 2em;
   color: white;
