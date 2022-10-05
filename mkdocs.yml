@@ -36,7 +36,6 @@ plugins:
       minify_html: true
   - redirects:
       redirect_maps:
-#        'index.html': 'https://develop.cloudnativetoolkit.dev'
         'install': 'https://develop.cloudnativetoolkit.dev/setup/setup-options.md'
         'setup': 'https://develop.cloudnativetoolkit.dev/learning/dev-setup.md'
         'learn': 'https://develop.cloudnativetoolkit.dev/learning/fast-start.md'
